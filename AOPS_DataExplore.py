@@ -10,6 +10,10 @@ import altair as alt
 
 import streamlit as st
 
+sqlserver = st.secrets["sqlserver"]
+sqlport = st.secrets["sqlport"]
+sqluser = st.secrets["sqluser"]
+sqlpwd = st.secrets["sqlpwd"]
 
 ########## SQL functions
 def create_connection(host_name, port_no, user_name, user_password,dbname):
